@@ -1,3 +1,40 @@
+const dropZone = document.getElementById('drop-zone');
+const content = document.getElementById('content');
+
+const reader = new FileReader();
+
+if (window.FileList && window.File) {
+  dropZone.addEventListener('dragover', event => {
+    event.stopPropagation();
+    event.preventDefault();
+    event.dataTransfer.dropEffect = 'copy';
+  });
+  
+  dropZone.addEventListener('drop', event => {
+    content.innerHTML = '';
+    event.stopPropagation();
+    event.preventDefault();
+    const files = event.dataTransfer.files;
+    console.log(files);
+    
+    reader.readAsDataURL(files[0]);
+  
+    reader.addEventListener('load', (event) => {
+      content.innerHTML = '';
+      const img = document.createElement('img');
+      img.style.height = '400px';
+      img.style.width = '400px';
+      content.appendChild(img);
+      img.src = event.target.result;
+      img.alt = file.name;
+      
+    });
+  }); 
+}
+
+
+
+
 document.getElementById("uploadBtn").onchange = function () {
     document.getElementById("uploadFile").value = this.files[0].name;
 };
