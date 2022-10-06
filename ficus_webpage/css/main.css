@@ -1,0 +1,186 @@
+#file { display: none }
+
+.mdl-card__media {
+	margin: 0;
+}
+
+.mdl-card__title-text.social{
+text-align: center;
+}
+.mdl-card__actions {
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+}
+.mdl-card__actions > .mdl-button--icon {
+  margin-right: 3px;
+  margin-left: 3px;
+}
+.rotatecard{
+    transform:rotateY(180deg);
+}
+* {
+  @include box-sizing(border-box);
+}
+
+$pad: 20px;
+
+.grid {
+  background: white;
+  margin: 0 0 $pad 0;
+
+  &:after {
+    /* Or @extend clearfix */
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+[class*='col-'] {
+  float: left;
+  padding-right: $pad;
+  .grid &:last-of-type {
+    padding-right: 0;
+  }
+}
+.col-1-1 {
+  width: 100%;
+}
+.col-2-3 {
+  width: 66.66%;
+}
+.col-1-3 {
+  width: 33.33%;
+}
+.col-1-2 {
+  width: 50%;
+}
+.col-1-4 {
+  width: 25%;
+}
+.col-1-8 {
+  width: 12.5%;
+}
+
+/* Opt-in outside padding */
+.grid-pad {
+  padding: $pad 0 $pad $pad;
+  [class*='col-']:last-of-type {
+    padding-right: $pad;
+  }
+}
+.chart {
+  height: 600px;
+}
+.flip{
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+  position: relative;
+}
+
+.cardscourses{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.cardsocial{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.cardacadproj{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.cardshome.flipped{
+  visibility: hidden;
+}
+.cardshome:not(.flipped){
+  visibility: visible;
+}
+.cardscourses:not(.flipped){
+  visibility: visible;
+}
+.cardscourses.flipped{
+  visibility: hidden;
+}
+
+.cardsocial:not(.flipped){
+  visibility: visible;
+}
+.cardsocial.flipped{
+visibility: hidden;
+}
+.cardacadproj:not(.flipped){
+  visibility: visible;
+}
+.cardacadproj.flipped{
+visibility: hidden;
+}
+.card.flipped .tras2{
+  position: absolute;
+  left: 50%;
+  visibility: visible;
+}
+
+.card:not(.flipped) .tras2{
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  overflow:hidden;
+  visibility: hidden;
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg );
+  -o-transform: rotateY(-180deg );
+}
+
+.cardships .mdl-card__title {
+  color: #fff;
+}
+
+.cardsocial .mdl-card__title {
+  background: url(../images/LousaCard.png);
+  background-size: 100% 100%;
+  height: 300px;
+
+  color: rgb(0,188,212);
+}
+
+.cardships .mdl-button {
+  color: #00BCD4;
+}
+
+#textf{
+  margin-left: 8.33%;
+}
+
+.scrolling{
+  overflow: scroll;
+  height: 100px;
+}
+
+#dicio{
+  height: 750px;
+}
+
+.mdl-data-table {
+  white-space: pre-wrap;
+}
+
+.space{
+  height: 50px;
+}
+
+@font-face {
+    font-family: IronMaiden;
+    src: url(iron-maiden.ttf);
+}
+
+.mainspan{
+  font-family: IronMaiden;
+}
