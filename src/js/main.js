@@ -1,4 +1,13 @@
-
+$(function() {
+  var layout = $(".mdl-layout__content");
+  var st = 0;
+  $( layout ).scroll(function() {
+      st = $(layout).scrollTop();
+      AOS.refresh();
+      /*console.log(st);*/
+  });
+  
+});
 
 function rotate_Card(btn) {
   var $card = $(btn).closest('.card-container');
@@ -265,47 +274,37 @@ $('#erfcalc').change(function() {
 });
 
 
-$(".estrutural1").click(function() {
-    if (document.getElementById("chkbox1").checked==true){
-        document.getElementById("cb1").click();
+  function rotateCard(bt) {
+    var $card =  $(bt).closest('.card');
+    if ($card.hasClass('flipped')) {
+        $card.removeClass('flipped');
     }
-    if (document.getElementById("chkbox2").checked==true){
-        document.getElementById("cb2").click();
+    else {
+    $card.addClass('flipped');
     }
-    if (document.getElementById("chkbox3").checked==true){
-        document.getElementById("cb3").click();
+    console.log($card);
     }
-    if (document.getElementById("chkbox4").checked==true){
-        document.getElementById("cb4").click();
-    }
-});
+	
+	
+document.getElementById("file1").onchange = function () {
+    document.getElementById("uploadFile").value = this.files[0].name;
+	/*const file = event.target.files[0];
+	const storageRef = ref(storage,'pitally/' + file.name);
+	uploadBytes(storageRef, file).then((snapshot) => {
+	  console.log('Uploaded a blob or file!');
+	})*/
+};
 
-$(".estrutural2").click(function() {
-    if (document.getElementById("chkbox5").checked==true){
-        document.getElementById("cb5").click();
-    }
-    if (document.getElementById("chkbox6").checked==true){
-        document.getElementById("cb6").click();
-    }
-    if (document.getElementById("chkbox7").checked==true){
-        document.getElementById("cb7").click();
-    }
-    if (document.getElementById("chkbox8").checked==true){
-        document.getElementById("cb8").click();
-    }
-});
 
-(function() {
+document.getElementById("file2").onchange = function () {
+    document.getElementById("uploadFile2").value = this.files[0].name;
+	/*//console.log(this.files[0].name);
+	const file = event.target.files[0];
+    const storageRef = firebase.storage().ref('pitally/' + file.name);
+	//const storageRef = ref(storage,'pitally/' + file.name);
+	uploadBytes(storageRef, file).then((snapshot) => {
+	  console.log('Uploaded a blob or file!');
+	})
+	*/
+};
 
-  window['counter'] = 0;
-  var snackbarContainer = document.querySelector('#toast-message');
-  var showToastButton = document.querySelector('#show-toast');
-  showToastButton.addEventListener('click', function() {
-    'use strict';
-    var data = {
-      message: 'Copyright 2016 - Adriano Dayvson Marques Ferreira. Todas as ferramentas presentes na página são para fins acadêmicos. O autor não se responsabiliza pelo uso de qualquer ferramenta ou informação contida no site.',
-      timeout: 8000,
-    };
-    snackbarContainer.MaterialSnackbar.showSnackbar(data);
-  });
-}());

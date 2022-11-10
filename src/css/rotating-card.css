@@ -1,7 +1,36 @@
+.text-block-small{
+    position: absolute;
+    bottom: 30%;
+    right: 15%;
+    left: 15%;
+    top: 15%;
+    /*background-color:rgba(0,154,171,0.4);*/
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    opacity: 1;
+    font-family: 'GothamRoundedLight';
+    font-size: small;
+  }   
+
+.text-block {
+    position: absolute;
+    bottom: 30%;
+    right: 15%;
+    left: 15%;
+    top: 20%;
+    /*background-color:rgba(0,154,171,0.4);*/
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    opacity: 1;
+    font-family: 'GothamRoundedLight';
+    font-size: large;
+  }
 body {
 	font-size: 14px;
 	font-family: "Helvetica Nueue",Arial,Verdana,sans-serif;
-	background-color: #E5E9ED;
+	background-color: #E5F0F4;
 }
 .btn:hover,
 .btn:focus,
@@ -82,9 +111,9 @@ body {
 
 
 .card{
-    background: none repeat scroll 0 0 #FFFFFF;
+    background: none repeat scroll 0 0 #E5F0F4;
     border-radius: 4px;
-    color: #444444;
+    color: rgb(66, 166, 182);
 }
 .card-container, .front, .back {
 	width: 100%;
