@@ -1,3 +1,24 @@
+span{
+  font-family: 'GothamRoundedBold';
+  color: rgb(66, 166, 182);
+}
+h3, h4, h5, p{
+  font-family: 'GothamRoundedLight'
+}
+.mdl-typography--headline{
+  font-family: 'GothamRoundedBold'
+}
+
+html,*{
+	transition: all ease 0.3s;
+	scroll-behavior: smooth;
+}
+
+
+.initcard {
+    width: calc(100% - 0px);
+    height: calc(100% - 0px);
+}
 .column {
   float: left;
   width: 50%;
@@ -73,7 +94,7 @@
 }
 
 .portfolio-header .mdl-layout__drawer-button {
-    background-color: rgb(255 64 129);
+    background-color: rgb(66, 166, 182);
 }
 
 .portfolio-navigation-row .is-active {
@@ -175,10 +196,17 @@ img.article-image {
 }
 
 footer {
-  background-image: url(src/images/footer-background.png);
+  background-image: url(../images/footer-background.png);
   background-size: cover;
 }
 
 .slides input{
 	display: none
+}
+.aboutus{
+  margin-top: -30px;
+}
+
+.mdl-card{
+  border-radius: 10px;
 }
