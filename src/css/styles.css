@@ -1,15 +1,9 @@
-
-.navbarScroll.navbarDark {
-    background-color: black;
-}
-
 span{
   font-family: 'GothamRoundedBold';
   color: rgb(66, 166, 182);
 }
-
-h3, h4, h5, p {
-    font-family: 'GothamRoundedLight'
+h3, h4, h5, p{
+  font-family: 'GothamRoundedLight'
 }
 .mdl-typography--headline{
   font-family: 'GothamRoundedBold'
@@ -44,18 +38,18 @@ html,*{
 }
 
 .mdl-layout__title {
-  font-size: 30px;
+  font-size: 70px;
   text-align: center;
   font-weight: bold;
   color: rgb(66, 166, 182);
 }
 
-.is-compact .mdl-layout__title span {
+.is-compact .mdl-layout__title span { 
   display: none;
 }
 
 .portfolio-logo-row {
-  min-height: 150px;
+  min-height: 200px;
 }
 
 .is-compact .portfolio-logo-row {
@@ -63,34 +57,19 @@ html,*{
 }
 
 .portfolio-logo {
-    background: url(../images/AvatarFicus-01.jpg) 50% no-repeat;
-    background-size: cover;
-    height: 150px;
-    width: 150px;
-    margin: auto auto;
-    /* border-radius: 50%;*/
+  background: url(../images/AvatarFicus-01.jpg) 50% no-repeat;
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+  margin: auto auto 10px;
+  border-radius: 50%;
 }
-/*
+
 .is-compact .portfolio-logo {
   height: 50px;
   width: 50px;
   margin-top: 7px;
-}*/
-
-h1#logo_head {
-    /*text-indent: 150px;*/
-    /*background-color:wheat;*/
-    position: relative;
-    top: 50%;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
-    height: 150px;
-    font-size: 48pt;
-    /*padding: 30pt 100pt;*/
-    font-family: 'GothamRoundedBold';
 }
-
 
 .portfolio-navigation-row {
   background-color: rgb(180, 222, 228);
@@ -230,4 +209,9 @@ footer {
 
 .mdl-card{
   border-radius: 10px;
+}
+
+.mdl-layout__header--waterfall {
+    box-shadow: none;
+    overflow: visible;
 }

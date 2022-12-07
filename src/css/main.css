@@ -288,8 +288,13 @@ visibility: hidden;
 
 .mainspan{
   font-family: 'GothamRoundedBold';
-  
 }
+
+.is-compact .mainspan{
+  font-family: 'GothamRoundedBold';
+   font-size: 20px; 
+}
+
 .bookspan{
   font-family: 'GothamRoundedBook';
   

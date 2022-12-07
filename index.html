@@ -18,23 +18,18 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="Ficus System Webpage.">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-	<title>Ficus System </title>
-	<link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-pink.min.css" />
-	<link rel="stylesheet" href="src/css/styles.css" />
-	<link rel="stylesheet" href="src/css/main.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Ficus System Webpage.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Ficus System Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-pink.min.css" />
+    <link rel="stylesheet" href="src/css/styles.css" />
+	<link rel="stylesheet" href="src/css/main.css" >
 	<link rel='stylesheet' href='src/css/rotating-card.css' />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-	<!-- bootstrap CDN -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-
 	<script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
@@ -43,409 +38,355 @@
 </head>
 
 <body>
-	<!-- navbar -->
-	<nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
-		<div class="container">
-			<a class="navbar-ficus" href="#">ficus</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ms-auto">
-					<li class="nav-item active">
-						<a class="nav-link" href="#home">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#about">About</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#services">Services</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#portfolio">Portfolio</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#contact">Contact</a>
-					</li>
-				</ul>
-
-			</div>
-		</div>
-	</nav>
-	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-		<header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
-			<div class="mdl-layout__header-row portfolio-logo-row">
-				<span class="mdl-layout__title">
-					<div class="portfolio-logo"></div>
-				</span>
-				<span>
-					<h1 id="logo_head">FICUS</h1>
-				</span>
-			</div>
-			<!--
-	<div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
-		<nav class="mdl-navigation bookspan">
-			<a class="mdl-navigation__link is-active " href="index.html">Home</a>
-			<a class="mdl-navigation__link " href="software.html">Software</a>
-			<a class="mdl-navigation__link " href="#contact-form">Service</a>
-			<a class="mdl-navigation__link " href="about.html">About</a>
-			<a class="mdl-navigation__link " href="contact.html">Contact</a>
-		</nav>
-	</div>
-	-->
-		</header>
-		<!--
-	<div class="mdl-layout__drawer mdl-layout--small-screen-only">
-		<nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-			<a class="mdl-navigation__link is-active" href="index.html">Home</a>
-			<a class="mdl-navigation__link " href="software.html">Software</a>
-			<a class="mdl-navigation__link " href="#contact-form">Service</a>
-			<a class="mdl-navigation__link" href="about.html">About</a>
-			<a class="mdl-navigation__link" href="contact.html">Contact</a>
-		</nav>
-	</div>
-	-->
-		<main class="mdl-layout__content">
-			<section id="home">
-				<div class="mdl-cell--12-col mdl-card mdl-shadow--4dp portfolio-card mdl-layout--large-screen-only initcard">
-					<div class="mdl-card__media">
-						<img class="article-image" src=" src/images/Card2.jpg" border="0" alt="">
-						<div class="text-block">
-							<h1>Integrity and Schedule Maintenance report generated with a few clicks.</h1>
-							<h1>Fast, precision, and easy!</h1>
-							<h3>Welcome to Ficus</h3>
-						</div>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+            <div class="mdl-layout__header-row portfolio-logo-row">
+                <span class="mdl-layout__title">
+                    <div class="portfolio-logo"></div>                    
+                </span>
+				<span class="mdl-layout__title mainspan">FICUS</span>
+            </div>
+            <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
+                <nav class="mdl-navigation bookspan">
+				<a class="mdl-navigation__link is-active " href="index.html">Home</a>
+                    <a class="mdl-navigation__link " href="software.html">Software</a>
+					<a class="mdl-navigation__link " href="#contact-form">Service</a>
+                    <a class="mdl-navigation__link " href="about.html">About</a>
+                    <a class="mdl-navigation__link " href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                <a class="mdl-navigation__link is-active" href="index.html">Home</a>
+				<a class="mdl-navigation__link " href="software.html">Software</a>
+				<a class="mdl-navigation__link " href="#contact-form">Service</a>
+                <a class="mdl-navigation__link" href="about.html">About</a>
+                <a class="mdl-navigation__link" href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="mdl-cell--12-col mdl-card mdl-shadow--4dp portfolio-card mdl-layout--large-screen-only initcard">
+                <div class="mdl-card__media">
+                    <img class="article-image" src=" src/images/Card2.jpg" border="0" alt="">
+                    <div class="text-block">
+                        <h2>Integrity and Schedule Maintenance report generated with a few clicks.</h2>
+                        <h2>Fast, precision, and easy!</h2>
+                        <h2 >Welcome to Ficus</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="mdl-cell--12-col mdl-card mdl-shadow--4dp mdl-layout--small-screen-only portfolio-card">
+                <div class="mdl-card__media">
+                    <img class="article-image" src=" src/images/Card2.jpg" border="0" alt="">
+                    <div class="text-block">
+                        <h4>Integrity and Schedule Maintenance report generated with a few clicks.
+                        Fast, precision, and easy!</h4>
+                        <h5 >Welcome to Ficus</h5>
+                    </div>
+                </div>
+            </div>
+                <!--<div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">PACAT</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    Pipeline Advanced Assessment Tools.
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Read more</a>
+                </div>-->
+            <!--</div>-->
+			
+			<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp portfolio-max-width aboutus"  data-aos="fade-up" data-aos-delay="200" data-aos-duration="400">				
+				<div class="mdl-grid ">
+					<h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">About us</h3>
+					<div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding">
+						<h3>Ficus's mission is to assess the safety of pipelines using modern tools in a simple, intuitive and automated way.
+</h3>
+						<p class="highlight">
+							We use advanced computational technologies to solve real problems of structural assessment of pipelines, helping companies and engineers, <span>reducing costs by up to 25%</span> and <span>avoiding accidents</span>, protecting society and the environment.
+						</p>
+					</div>
+					<div class="mdl-cell mdl-cell--6-col">
+						<img class="article-image" src=" src/images/aboutus.jpg" border="0" alt="">
 					</div>
 				</div>
-				<div class="mdl-cell--12-col mdl-card mdl-shadow--4dp mdl-layout--small-screen-only portfolio-card">
-					<div class="mdl-card__media">
-						<img class="article-image" src=" src/images/Card2.jpg" border="0" alt="">
-						<div class="text-block">
-							<h2>Integrity and Schedule Maintenance report generated with a few clicks. </h2>
-							<h2>Fast, precision, and easy! </h2>
-							<h4>Welcome to Ficus</h4>
-						</div>
-					</div>
-				</div>
-			</section>
-			<!--<div class="mdl-card__title">
-		<h2 class="mdl-card__title-text">PACAT</h2>
-	</div>
-	<div class="mdl-card__supporting-text">
-		Pipeline Advanced Assessment Tools.
-	</div>
-	<div class="mdl-card__actions mdl-card--border">
-		<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Read more</a>
-	</div>-->
-			<!--</div>-->
-			<section id="about">
-				<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp portfolio-max-width aboutus" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400">
-					<div class="mdl-grid ">
-						<h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">About us</h3>
-						<div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding">
-							<h3>The Ficus tem a missão de eliminar as ineficiências no setor de transporte rodoviário de cargas.</h3>
-							<p>
-								Utilizamos tecnologia para conectar as transportadoras aos caminhoneiros, revertendo o cenário atual de alta capacidade ociosa dos caminhões, insegurança e burocracia. Isso é possível por meio da digitalização.
-							</p>
-							<p class="highlight">
-								Tornar a capacidade ociosa mais acessível <span>economiza até 25%</span> nos custos de transporte, <span>aumenta o lucro dos caminhoneiros em 50%</span> e <span>reduz as emissões de CO2</span>.
-							</p>
-						</div>
-						<div class="mdl-cell mdl-cell--6-col">
-							<img class="article-image" src=" src/images/marvin-meyer-SYTO3xs06fU-unsplash.jpg" border="0" alt="">
-						</div>
-					</div>
-				</div>
-				</section>
-					<div class="mdl-grid portfolio-max-width " data-aos="fade-up">
-						<!--<div class="slider">
-				<section class="card">
-					<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp portfolio-card slide flip frente">
-						<div class="mdl-card__media">
-							<img class="article-image" src=" src/images/BrasilMeshDisp2.png" border="0" alt="">
-						</div>
-						<div class="mdl-card__title">
-							<h2 class="mdl-card__title-text">Tridimensional Finite Element Analysis</h2>
-						</div>
-						<div class="mdl-card__supporting-text">
-							Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
-						</div>
-						<div class="mdl-card__actions">
-							<input type = "radio" id = "radio1" class = "mdl-radio__button mdl-js-ripple-effect bt" onclick="rotateCard(this)">
-							<input type = "radio" id = "radio2" class = "mdl-radio__button mdl-js-ripple-effect" >
-						</div>
-					</div>
-					<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp portfolio-card flip tras">
-						<div class="mdl-card__media">
-							<img class="article-image" src=" src/images/BrasilMeshDisp2.png" border="0" alt="">
-						</div>
-						<div class="mdl-card__title">
-							<h2 class="mdl-card__title-text">Tridimensional Finite Element Analysis</h2>
-						</div>
-						<div class="mdl-card__supporting-text">
-							Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
-						</div>
-						<div class="mdl-card__actions">
-							<input type = "radio" id = "radio1" class = "mdl-radio__button mdl-js-ripple-effect" >
-							<input type = "radio" id = "radio2" class = "mdl-radio__button mdl-js-ripple-effect">
-						</div>
-					</div>
-				 </section>
 			</div>
-			<div class="navigation-auto">
-				<div class="auto-btn1"></div>
-				<div class="auto-btn2"></div>
-			</div>
-			<div class="manual-navigation">
-				<label for="radio1" class="manual-btn1"></label>
-				<label for="radio2" class="manual-btn2"></label>
-			</div>-->
-						<!--<div class="mdl-card__media" >
-					<img class="article-image" src=" src/images/tunnel-g95b567e13_1920.jpg" border="0" alt="">
-			</div>-->
-
-						<div class="mdl-cell mdl-cell--8-col mdl-card mdl-shadow--4dp portfolio-card">
-							<div class="mdl-card__media">
-								<img class="article-image" src=" src/images/PACAT_2.png" border="0" alt="">
-							</div>
-							<div class="mdl-card__title">
-								<h2 class="mdl-card__title-text">Pipetally Analysis</h2>
-							</div>
-							<div class="mdl-card__supporting-text">
-								Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
-							</div>
-							<div class="mdl-card__actions mdl-card--border">
-								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Read more</a>
-							</div>
-						</div>
-						<div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
-							<div class="mdl-card__media">
-								<img class="article-image" src=" src/images/selim-arda-eryilmaz-Grg6bwZuBMs-unsplash.jpg" border="0" alt="">
-							</div>
-							<div class="mdl-card__title">
-								<h2 class="mdl-card__title-text">Optimize maintenance plans</h2>
-							</div>
-							<div class="mdl-card__supporting-text">
-								Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
-							</div>
-							<div class="mdl-card__actions mdl-card--border">
-								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Read more</a>
-							</div>
-						</div>
-						<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp portfolio-card">
-							<div class="mdl-card__media">
-								<img class="article-image" src=" src/images/marvin-meyer-SYTO3xs06fU-unsplash.jpg" border="0" alt="">
-							</div>
-							<div class="mdl-card__title">
-								<h2 class="mdl-card__title-text">Focus your time where it really matters</h2>
-							</div>
-							<div class="mdl-card__supporting-text">
-								Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+            <div class="mdl-grid portfolio-max-width " data-aos="fade-up">
+				<div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet">
+					<form class="contact-form" id="contact-form" role="form" >
+						<div class=" mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
+						  <div class="mdl-card__title mdl-card--expand" id="homenav">
+							<h2 class="mdl-card__title-text mainpipetallyanali">Pipetally Analysis</h2>
+						  </div>
+						  <div class="mdl-grid">
+								<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--24-col">
+									<label class = "mdl-checkbox mdl-js-checkbox" >
+									  <input type = "checkbox" name="judge" id="judge1" value = "Level 1"
+										 class = "mdl-checkbox__input" unchecked>
+									  <span class = "mdl-checkbox__label">Level 1</span>
+								   </label>
+								</div>
+								<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--12-col">
+								   <label class = "mdl-checkbox mdl-js-checkbox" >
+									  <input type = "checkbox" name="judge" id="judge2" value = "Match"
+										 class = "mdl-checkbox__input" unchecked>
+									  <span class = "mdl-checkbox__label">Pipetally Match</span>
+								   </label>
+								</div>
+								<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--12-col">
+								   <label class = "mdl-checkbox mdl-js-checkbox" >
+									  <input type = "checkbox" name="judge" id="judge3" value = "FEM"
+										 class = "mdl-checkbox__input" unchecked>
+									  <span class = "mdl-checkbox__label">Finite Element Analysis</span>
+								   </label>
+								</div>
+								<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--12-col">
+								   <label class = "mdl-checkbox mdl-js-checkbox" >
+									  <input type = "checkbox" name="judge"  id="judge4" value = "Reliability"
+										 class = "mdl-checkbox__input" unchecked>
+									  <span class = "mdl-checkbox__label">Reliabilty Analysis</span>
+								   </label>
+								</div>
 							</div>
 							<div class="mdl-card__actions mdl-card--border">
-								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Read more</a>
-							</div>
-						</div>
-
-
-						<div class="mdl-cell mdl-cell--6-col mdl-card mdl-shadow--4dp portfolio-card " data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
-							<div class="mdl-card__title">
-								<h1 class="mdl-card__title-text mdl-color-text--grey-600">Calculate ERF of the corroded pipelines</h1>
-							</div>
-							<div id="erfcalc">
+								<div class="mdl-grid">
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--8-col" id="textf">
+										<input class="mdl-textfield__input entrada1" type="text" name="file1" placeholder="File 1" id="uploadFile" readonly/>
+									</div>
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--file mdl-cell--4-col" >
+										<input type="file" name="file1" id="file1">
+										<label for="file1" class="mdl-button mdl-js-button  ">
+										<i class="material-icons">attach_file</i>
+										</label>
+									</div>
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--8-col" id="textf">
+										<input class="mdl-textfield__input entrada1" type="text" placeholder="File 2" name="file2" id="uploadFile2" readonly/>
+										
+									</div>								
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--file mdl-cell--4-col">
+										<input type="file" name="file2" id="file2">
+										<label for="file2" class="mdl-button mdl-js-button  ">
+										<i class="material-icons">attach_file</i>
+										</label>
+									</div>
+									<!--<div id="drop-zone">
+										DROP HERE
+									</div>-->
+								</div>
 								<div class="mdl-grid">
 									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
-										<input class="mdl-textfield__input entrada1" type="text" id="D" pattern="-?[0-9]*(\.[0-9]+)?">
+										<input class="mdl-textfield__input entrada1" type="text" name="diameter" id="D" pattern="-?[0-9]*(\.[0-9]+)?">
 										<label class="mdl-textfield__label" for="D">D</label>
 										<span class="mdl-textfield__error">Digite um número!</span>
 									</div>
 									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
-										<input class="mdl-textfield__input entrada1" type="text" id="t" pattern="-?[0-9]*(\.[0-9]+)?">
+										<input class="mdl-textfield__input entrada1" type="text" name="thickness" id="t" pattern="-?[0-9]*(\.[0-9]+)?">
 										<label class="mdl-textfield__label" for="t">t</label>
 										<span class="mdl-textfield__error">Digite um número!</span>
 									</div>
 									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
-										<input class="mdl-textfield__input entrada1" type="text" id="L" pattern="-?[0-9]*(\.[0-9]+)?">
-										<label class="mdl-textfield__label" for="L">L</label>
-										<span class="mdl-textfield__error">Digite um número!</span>
-									</div>
-									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
-										<input class="mdl-textfield__input entrada1" type="text" id="d" pattern="-?[0-9]*(\.[0-9]+)?">
-										<label class="mdl-textfield__label" for="d">d</label>
-										<span class="mdl-textfield__error">Digite um número!</span>
-									</div>
-									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
-										<input class="mdl-textfield__input entrada1" type="text" id="sige" pattern="-?[0-9]*(\.[0-9]+)?">
+										<input class="mdl-textfield__input entrada1" type="text" name="sige" id="sige" pattern="-?[0-9]*(\.[0-9]+)?">
 										<label class="mdl-textfield__label" for="sige">&#963<sub>e</sub></label>
 										<span class="mdl-textfield__error">Digite um número!</span>
-									</div>
+									</div>								
 									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
-										<input class="mdl-textfield__input entrada1" type="text" id="sigu" pattern="-?[0-9]*(\.[0-9]+)?">
+										<input class="mdl-textfield__input entrada1" type="text" name="sigu" id="sigu" pattern="-?[0-9]*(\.[0-9]+)?">
 										<label class="mdl-textfield__label" for="sigu">&#963<sub>u</sub></label>
 										<span class="mdl-textfield__error">Digite um número!</span>
 									</div>
 									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
-										<input class="mdl-textfield__input entrada1" type="text" id="p" pattern="-?[0-9]*(\.[0-9]+)?">
+										<input class="mdl-textfield__input entrada1" type="text" name="poper" id="p" pattern="-?[0-9]*(\.[0-9]+)?">
 										<label class="mdl-textfield__label" for="p">P<sub>oper</sub></label>
 										<span class="mdl-textfield__error">Digite um número!</span>
 									</div>
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
+										<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mainpipetallyanalibutton" type="submit">
+											Submit
+										</button>							
+									</div>
 								</div>
 							</div>
-							<div class="mdl-card__media">
-								<img src="src/images/pipedefDim.png" border="0" margin="20" width="100%">
-							</div>
-							<div class="mdl-card__supporting-text">
-								<p style="color:#424242;" id="erfoutput"></p>
-								<p>Free tool to compute corroded pipe ERF using B31G and DNV Single semi empirical mehods</p>
-							</div>
 						</div>
-						<div class="mdl-cell mdl-cell--6-col mdl-card mdl-shadow--4dp portfolio-card">
+					</form>	
+				</div>
+				<!--<div class="slider">
+					<section class="card">
+						<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp portfolio-card slide flip frente">
 							<div class="mdl-card__media">
-								<img class="article-image" src=" src/images/christina-notebook.jpg" border="0" alt="">
+								<img class="article-image" src=" src/images/BrasilMeshDisp2.png" border="0" alt="">
 							</div>
 							<div class="mdl-card__title">
-								<h2 class="mdl-card__title-text">Compute assessment from anywhere</h2>
+								<h2 class="mdl-card__title-text">Tridimensional Finite Element Analysis</h2>
 							</div>
 							<div class="mdl-card__supporting-text">
 								Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
 							</div>
-							<div class="mdl-card__actions mdl-card--border">
-								<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent" href="portfolio-example01.html">Read more</a>
+							<div class="mdl-card__actions">
+								<input type = "radio" id = "radio1" class = "mdl-radio__button mdl-js-ripple-effect bt" onclick="rotateCard(this)">
+								<input type = "radio" id = "radio2" class = "mdl-radio__button mdl-js-ripple-effect" >
 							</div>
 						</div>
-						<div class="mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet">
-							<form class="contact-form" id="contact-form" role="form">
-								<div class=" mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
-									<div class="mdl-card__title mdl-card--expand" id="homenav">
-										<h2 class="mdl-card__title-text mainpipetallyanali">Pipetally Analysis</h2>
-									</div>
-									<div class="mdl-grid">
-										<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--24-col">
-											<label class="mdl-checkbox mdl-js-checkbox">
-												<input type="checkbox" name="judge" id="judge1" value="Level 1"
-													   class="mdl-checkbox__input" unchecked>
-												<span class="mdl-checkbox__label">Level 1</span>
-											</label>
-										</div>
-										<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--12-col">
-											<label class="mdl-checkbox mdl-js-checkbox">
-												<input type="checkbox" name="judge" id="judge2" value="Match"
-													   class="mdl-checkbox__input" unchecked>
-												<span class="mdl-checkbox__label">Pipetally Match</span>
-											</label>
-										</div>
-										<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--12-col">
-											<label class="mdl-checkbox mdl-js-checkbox">
-												<input type="checkbox" name="judge" id="judge3" value="FEM"
-													   class="mdl-checkbox__input" unchecked>
-												<span class="mdl-checkbox__label">Finite Element Analysis</span>
-											</label>
-										</div>
-										<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--12-col">
-											<label class="mdl-checkbox mdl-js-checkbox">
-												<input type="checkbox" name="judge" id="judge4" value="Reliability"
-													   class="mdl-checkbox__input" unchecked>
-												<span class="mdl-checkbox__label">Reliabilty Analysis</span>
-											</label>
-										</div>
-									</div>
-									<div class="mdl-card__actions mdl-card--border">
-										<div class="mdl-grid">
-											<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--8-col" id="textf">
-												<input class="mdl-textfield__input entrada1" type="text" name="file1" placeholder="File 1" id="uploadFile" readonly />
-											</div>
-											<div class="mdl-textfield mdl-js-textfield mdl-textfield--file mdl-cell--4-col">
-												<input type="file" name="file1" id="file1">
-												<label for="file1" class="mdl-button mdl-js-button  ">
-													<i class="material-icons">attach_file</i>
-												</label>
-											</div>
-											<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--8-col" id="textf">
-												<input class="mdl-textfield__input entrada1" type="text" placeholder="File 2" name="file2" id="uploadFile2" readonly />
+						<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp portfolio-card flip tras">
+							<div class="mdl-card__media">
+								<img class="article-image" src=" src/images/BrasilMeshDisp2.png" border="0" alt="">
+							</div>
+							<div class="mdl-card__title">
+								<h2 class="mdl-card__title-text">Tridimensional Finite Element Analysis</h2>
+							</div>
+							<div class="mdl-card__supporting-text">
+								Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+							</div>
+							<div class="mdl-card__actions">
+								<input type = "radio" id = "radio1" class = "mdl-radio__button mdl-js-ripple-effect" >
+								<input type = "radio" id = "radio2" class = "mdl-radio__button mdl-js-ripple-effect">
+							</div>
+						</div>
+					 </section>
+				</div>
+				<div class="navigation-auto">
+					<div class="auto-btn1"></div>
+					<div class="auto-btn2"></div>
+				</div>
+				<div class="manual-navigation">
+					<label for="radio1" class="manual-btn1"></label>
+					<label for="radio2" class="manual-btn2"></label>
+				</div>-->
+				<!--<div class="mdl-card__media" >
+                        <img class="article-image" src=" src/images/tunnel-g95b567e13_1920.jpg" border="0" alt="">
+                </div>-->
+				
+                <div class="mdl-cell mdl-cell--8-col mdl-card mdl-shadow--4dp portfolio-card">
+                    <div class="mdl-card__media" >
+                        <img class="article-image" src=" src/images/PACAT_2.png" border="0" alt="">
+                    </div>
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Pipetally Analysis</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        Ficus' PAAT software performs automatic pipe tally analysis using multiple levels of analysis, including level 1, level 2, finite element, reliability, and defect matching and automatic report generation.
+                    </div>
+                </div>
+                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                    <div class="mdl-card__media">
+                        <img class="article-image" src=" src/images/selim-arda-eryilmaz-Grg6bwZuBMs-unsplash.jpg" border="0" alt="">
+                    </div>
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Optimize maintenance plans</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+                    </div>
 
-											</div>
-											<div class="mdl-textfield mdl-js-textfield mdl-textfield--file mdl-cell--4-col">
-												<input type="file" name="file2" id="file2">
-												<label for="file2" class="mdl-button mdl-js-button  ">
-													<i class="material-icons">attach_file</i>
-												</label>
-											</div>
-											<!--<div id="drop-zone">
-									DROP HERE
-								</div>-->
-										</div>
-										<div class="mdl-grid">
-											<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
-												<input class="mdl-textfield__input entrada1" type="text" name="diameter" id="D" pattern="-?[0-9]*(\.[0-9]+)?">
-												<label class="mdl-textfield__label" for="D">D</label>
-												<span class="mdl-textfield__error">Digite um número!</span>
-											</div>
-											<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
-												<input class="mdl-textfield__input entrada1" type="text" name="thickness" id="t" pattern="-?[0-9]*(\.[0-9]+)?">
-												<label class="mdl-textfield__label" for="t">t</label>
-												<span class="mdl-textfield__error">Digite um número!</span>
-											</div>
-											<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
-												<input class="mdl-textfield__input entrada1" type="text" name="sige" id="sige" pattern="-?[0-9]*(\.[0-9]+)?">
-												<label class="mdl-textfield__label" for="sige">&#963<sub>e</sub></label>
-												<span class="mdl-textfield__error">Digite um número!</span>
-											</div>
-											<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
-												<input class="mdl-textfield__input entrada1" type="text" name="sigu" id="sigu" pattern="-?[0-9]*(\.[0-9]+)?">
-												<label class="mdl-textfield__label" for="sigu">&#963<sub>u</sub></label>
-												<span class="mdl-textfield__error">Digite um número!</span>
-											</div>
-											<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
-												<input class="mdl-textfield__input entrada1" type="text" name="poper" id="p" pattern="-?[0-9]*(\.[0-9]+)?">
-												<label class="mdl-textfield__label" for="p">P<sub>oper</sub></label>
-												<span class="mdl-textfield__error">Digite um número!</span>
-											</div>
-											<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
-												<button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent mainpipetallyanalibutton" type="submit">
-													Submit
-												</button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</form>
+                </div>
+                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp portfolio-card" >
+                    <div class="mdl-card__media">
+                        <img class="article-image" src=" src/images/marvin-meyer-SYTO3xs06fU-unsplash.jpg" border="0" alt="">
+                    </div>
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Focus your time where it really matters</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        Using the PAAT, the results are computed and generated in real time, freeing up time from repetitive tasks so that engineers can perform more critical and specific tasks.
+                    </div>
+                </div>
+				
+				
+                <div class="mdl-cell mdl-cell--6-col mdl-card mdl-shadow--4dp portfolio-card " data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000">
+					<div class="mdl-card__title">
+					<h1 class="mdl-card__title-text mdl-color-text--grey-600">Calculate ERF of the corroded pipelines</h1>
+					</div>
+					<div id="erfcalc">
+						<div class="mdl-grid">
+							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
+								<input class="mdl-textfield__input entrada1" type="text" id="D" pattern="-?[0-9]*(\.[0-9]+)?">
+								<label class="mdl-textfield__label" for="D">D</label>
+								<span class="mdl-textfield__error">Digite um número!</span>
+							</div>
+							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
+								<input class="mdl-textfield__input entrada1" type="text" id="t" pattern="-?[0-9]*(\.[0-9]+)?">
+								<label class="mdl-textfield__label" for="t">t</label>
+								<span class="mdl-textfield__error">Digite um número!</span>
+							</div>
+							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
+								<input class="mdl-textfield__input entrada1" type="text" id="L" pattern="-?[0-9]*(\.[0-9]+)?">
+								<label class="mdl-textfield__label" for="L">L</label>
+								<span class="mdl-textfield__error">Digite um número!</span>
+							</div>
+							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
+								<input class="mdl-textfield__input entrada1" type="text" id="d" pattern="-?[0-9]*(\.[0-9]+)?">
+								<label class="mdl-textfield__label" for="d">d</label>
+								<span class="mdl-textfield__error">Digite um número!</span>
+							</div>
+							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
+								<input class="mdl-textfield__input entrada1" type="text" id="sige" pattern="-?[0-9]*(\.[0-9]+)?">
+								<label class="mdl-textfield__label" for="sige">&#963<sub>e</sub></label>
+								<span class="mdl-textfield__error">Digite um número!</span>
+							</div>								
+							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
+								<input class="mdl-textfield__input entrada1" type="text" id="sigu" pattern="-?[0-9]*(\.[0-9]+)?">
+								<label class="mdl-textfield__label" for="sigu">&#963<sub>u</sub></label>
+								<span class="mdl-textfield__error">Digite um número!</span>
+							</div>
+							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
+								<input class="mdl-textfield__input entrada1" type="text" id="p" pattern="-?[0-9]*(\.[0-9]+)?">
+								<label class="mdl-textfield__label" for="p">P<sub>oper</sub></label>
+								<span class="mdl-textfield__error">Digite um número!</span>
+							</div>			
 						</div>
 					</div>
-					<section id="contact">
-						<footer class="mdl-mini-footer">
-							<div class="mdl-mini-footer__left-section">
-								<div class="mdl-logo">Ficus System </div>
-							</div>
-							<div class="mdl-mini-footer__right-section">
-								<ul class="mdl-mini-footer__link-list">
-									<li><a href="#">Help</a></li>
-									<li><a href="#">Privacy & Terms</a></li>
-								</ul>
-							</div>
-						</footer>
-					</section>
-</main>
-	</div>
-	<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-	<script src="./src/js/jquery.min.js"></script>
-	<script src="./src/js/bootstrap.min.js"></script>
-	<script src="./src/js/main.js"></script>
+						<div class="mdl-card__media">
+							<img src="src/images/pipedefDim.png" border="0" margin="20" width="100%">
+						</div>
+					<div class="mdl-card__supporting-text">
+						<p style="color:#424242;" id="erfoutput"></p>
+						<p>Free tool to compute corroded pipe ERF using B31G and DNV Single semi empirical mehods</p>
+					</div>
+                </div>         
+				<div class="mdl-cell mdl-cell--6-col mdl-card mdl-shadow--4dp portfolio-card">
+                    <div class="mdl-card__media">
+                        <img class="article-image" src=" src/images/christina-notebook.jpg" border="0" alt="">
+                    </div>
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Compute assessment from anywhere</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        PAAT software is an online tool that can be accessed from anywhere, requiring only an internet connection, enabling real-time analysis, in addition to automatic report generation, accelerating bureaucratic processes.
+.
+                    </div>
+                </div>                
+            </div>
+            <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section">
+                    <div class="mdl-logo">Ficus System </div>
+                </div>
+                <div class="mdl-mini-footer__right-section">
+                    <ul class="mdl-mini-footer__link-list">
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">Privacy & Terms</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="./src/js/jquery.min.js"></script>
+    <script src="./src/js/bootstrap.min.js"></script>
+    <script src="./src/js/main.js"></script>
 	<script src="./src/js/paginas/cadastro.js" type="module"></script>
-	<script src="./src/js/jsapi.js"></script>
-	<script src="./src/js/com.js"></script>
-	<script src="./src/js/paginas/cadastro.js" type="module"></script>
+    <script src="./src/js/jsapi.js"></script>
+    <script src="./src/js/com.js"></script>
+    <script src="./src/js/paginas/cadastro.js" type="module"></script>
 	<script src="https://kit.fontawesome.com/36ad348d10.js" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
-		AOS.init()
+	AOS.init()
 	</script>
 	<script>
-		setTimeout(() => { AOS.refresh(); }, 500);
+		setTimeout(() => {AOS.refresh();}, 500);
 	</script>
 	<!--})-->
-	<!-- load javascript after loading all html content -->
-	<script src="src/js/script.js"></script>
 </body>
 
 </html>
