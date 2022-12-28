@@ -244,13 +244,13 @@ $('#search').keyup(function() {
 
 $('#erfcalc').change(function() {
   var tipo = $("#tipo").val();
-  var D = parseFloat($("#D").val());
-  var t = parseFloat($("#t").val());
-  var L = parseFloat($("#L").val());
-  var d = parseFloat($("#d").val());
-  var sige = parseFloat($("#sige").val());
-  var sigu = parseFloat($("#sigu").val());
-  var p= parseFloat($("#p").val());
+  var D = parseFloat($("#De").val());
+  var t = parseFloat($("#tn").val());
+  var L = parseFloat($("#Lt").val());
+  var d = parseFloat($("#dp").val());
+  var sige = parseFloat($("#siges").val());
+  var sigu = parseFloat($("#sigut").val());
+  var p= parseFloat($("#press").val());
   var pfb31g;
   var pfdnv;
   var erfb31g;

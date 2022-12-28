@@ -48,21 +48,21 @@
             </div>
             <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
                 <nav class="mdl-navigation bookspan">
-				<a class="mdl-navigation__link is-active " href="index.html">Home</a>
-                    <a class="mdl-navigation__link " href="software.html">Software</a>
+				<a class="mdl-navigation__link " href="index.html">Home</a>
+				    <a class="mdl-navigation__link " href="#aboutus">About</a>
 					<a class="mdl-navigation__link " href="#contact-form">Service</a>
-                    <a class="mdl-navigation__link " href="about.html">About</a>
-                    <a class="mdl-navigation__link " href="contact.html">Contact</a>
+					<a class="mdl-navigation__link " href="#software">Software</a>
+                    <a class="mdl-navigation__link " href="#contactus">Contact</a>
                 </nav>
             </div>
         </header>
         <div class="mdl-layout__drawer mdl-layout--small-screen-only">
             <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                <a class="mdl-navigation__link is-active" href="index.html">Home</a>
-				<a class="mdl-navigation__link " href="software.html">Software</a>
+                <a class="mdl-navigation__link " href="index.html">Home</a>				
+				<a class="mdl-navigation__link" href="#aboutus">About</a>
 				<a class="mdl-navigation__link " href="#contact-form">Service</a>
-                <a class="mdl-navigation__link" href="about.html">About</a>
-                <a class="mdl-navigation__link" href="contact.html">Contact</a>
+				<a class="mdl-navigation__link " href="#software">Software</a>
+                <a class="mdl-navigation__link" href="#contactus">Contact</a>
             </nav>
         </div>
         <main class="mdl-layout__content">
@@ -97,7 +97,7 @@
                 </div>-->
             <!--</div>-->
 			
-			<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp portfolio-max-width aboutus"  data-aos="fade-up" data-aos-delay="200" data-aos-duration="400">				
+			<div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp portfolio-max-width aboutus"  id="aboutus" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400">				
 				<div class="mdl-grid ">
 					<h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline">About us</h3>
 					<div class="mdl-cell mdl-cell--6-col mdl-card__supporting-text no-padding">
@@ -256,7 +256,7 @@
                         <img class="article-image" src=" src/images/tunnel-g95b567e13_1920.jpg" border="0" alt="">
                 </div>-->
 				
-                <div class="mdl-cell mdl-cell--8-col mdl-card mdl-shadow--4dp portfolio-card">
+                <div class="mdl-cell mdl-cell--8-col mdl-card mdl-shadow--4dp portfolio-card" id="software" data-aos="fade-right">
                     <div class="mdl-card__media" >
                         <img class="article-image" src=" src/images/PACAT_2.png" border="0" alt="">
                     </div>
@@ -264,10 +264,10 @@
                         <h2 class="mdl-card__title-text">Pipetally Analysis</h2>
                     </div>
                     <div class="mdl-card__supporting-text">
-                        Ficus' PAAT software performs automatic pipe tally analysis using multiple levels of analysis, including level 1, level 2, finite element, reliability, and defect matching and automatic report generation.
+                        Ficus' PAAT software performs <span>automatic pipe tally analysis</span> using multiple levels of analysis, including level 1, level 2, finite element, reliability, and defect matching and automatic report generation.
                     </div>
                 </div>
-                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+                <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card" data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
                     <div class="mdl-card__media">
                         <img class="article-image" src=" src/images/selim-arda-eryilmaz-Grg6bwZuBMs-unsplash.jpg" border="0" alt="">
                     </div>
@@ -275,11 +275,11 @@
                         <h2 class="mdl-card__title-text">Optimize maintenance plans</h2>
                     </div>
                     <div class="mdl-card__supporting-text">
-                        Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat duis.
+                        Find an optimum <span>Maintenance Planning and Scheduling </span>for the corroded pipeline. The <span>Maintenance Report</span> provide critical defects, their time to fail and sugestion on sections to repair. <span>Future Analysis</span> is performed based on the CGR given or computed based on 2 or more successive pig inspection (pipe tally files) or based on the pipe installation date. <span>Defect Matching</span> needed is effectively performed using an algorithm based on the  longest common subsequence (LCS) problem. 
                     </div>
 
                 </div>
-                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp portfolio-card" >
+                <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp portfolio-card" data-aos="fade-up">
                     <div class="mdl-card__media">
                         <img class="article-image" src=" src/images/marvin-meyer-SYTO3xs06fU-unsplash.jpg" border="0" alt="">
                     </div>
@@ -299,37 +299,37 @@
 					<div id="erfcalc">
 						<div class="mdl-grid">
 							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
-								<input class="mdl-textfield__input entrada1" type="text" id="D" pattern="-?[0-9]*(\.[0-9]+)?">
+								<input class="mdl-textfield__input entrada1" type="text" id="De" pattern="-?[0-9]*(\.[0-9]+)?">
 								<label class="mdl-textfield__label" for="D">D</label>
 								<span class="mdl-textfield__error">Digite um número!</span>
 							</div>
 							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
-								<input class="mdl-textfield__input entrada1" type="text" id="t" pattern="-?[0-9]*(\.[0-9]+)?">
+								<input class="mdl-textfield__input entrada1" type="text" id="tn" pattern="-?[0-9]*(\.[0-9]+)?">
 								<label class="mdl-textfield__label" for="t">t</label>
 								<span class="mdl-textfield__error">Digite um número!</span>
 							</div>
 							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
-								<input class="mdl-textfield__input entrada1" type="text" id="L" pattern="-?[0-9]*(\.[0-9]+)?">
+								<input class="mdl-textfield__input entrada1" type="text" id="Lt" pattern="-?[0-9]*(\.[0-9]+)?">
 								<label class="mdl-textfield__label" for="L">L</label>
 								<span class="mdl-textfield__error">Digite um número!</span>
 							</div>
 							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
-								<input class="mdl-textfield__input entrada1" type="text" id="d" pattern="-?[0-9]*(\.[0-9]+)?">
+								<input class="mdl-textfield__input entrada1" type="text" id="dp" pattern="-?[0-9]*(\.[0-9]+)?">
 								<label class="mdl-textfield__label" for="d">d</label>
 								<span class="mdl-textfield__error">Digite um número!</span>
 							</div>
 							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
-								<input class="mdl-textfield__input entrada1" type="text" id="sige" pattern="-?[0-9]*(\.[0-9]+)?">
+								<input class="mdl-textfield__input entrada1" type="text" id="siges" pattern="-?[0-9]*(\.[0-9]+)?">
 								<label class="mdl-textfield__label" for="sige">&#963<sub>e</sub></label>
 								<span class="mdl-textfield__error">Digite um número!</span>
 							</div>								
 							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
-								<input class="mdl-textfield__input entrada1" type="text" id="sigu" pattern="-?[0-9]*(\.[0-9]+)?">
+								<input class="mdl-textfield__input entrada1" type="text" id="sigut" pattern="-?[0-9]*(\.[0-9]+)?">
 								<label class="mdl-textfield__label" for="sigu">&#963<sub>u</sub></label>
 								<span class="mdl-textfield__error">Digite um número!</span>
 							</div>
 							<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell--3-col" id="textf">
-								<input class="mdl-textfield__input entrada1" type="text" id="p" pattern="-?[0-9]*(\.[0-9]+)?">
+								<input class="mdl-textfield__input entrada1" type="text" id="press" pattern="-?[0-9]*(\.[0-9]+)?">
 								<label class="mdl-textfield__label" for="p">P<sub>oper</sub></label>
 								<span class="mdl-textfield__error">Digite um número!</span>
 							</div>			
@@ -343,7 +343,7 @@
 						<p>Free tool to compute corroded pipe ERF using B31G and DNV Single semi empirical mehods</p>
 					</div>
                 </div>         
-				<div class="mdl-cell mdl-cell--6-col mdl-card mdl-shadow--4dp portfolio-card">
+				<div class="mdl-cell mdl-cell--6-col mdl-card mdl-shadow--4dp portfolio-card" data-aos="fade-left">
                     <div class="mdl-card__media">
                         <img class="article-image" src=" src/images/christina-notebook.jpg" border="0" alt="">
                     </div>
@@ -354,7 +354,41 @@
                         PAAT software is an online tool that can be accessed from anywhere, requiring only an internet connection, enabling real-time analysis, in addition to automatic report generation, accelerating bureaucratic processes.
 .
                     </div>
-                </div>                
+                </div> 
+				
+                <div class="mdl-cell mdl-cell--12-col  mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp" id="contactus" data-aos="fade-up">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Contact</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <p>
+                            For all enquiries, please email us using the form below.
+                        </p>
+                        <p class="highlight">
+                            <span> How can we help you?</span>
+                        </p>
+                        <form class="contactus" id="contactus">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name" name="name">
+                                <label class="mdl-textfield__label" for="Name">Name...</label>
+                                <span class="mdl-textfield__error">Letters and spaces only</span>
+                            </div>
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="Email" name="email">
+                                <label class="mdl-textfield__label" for="Email">Email...</label>
+                            </div>
+                            <div class="mdl-js-textfield mdl-textfield--floating-label textnote">
+                                <textarea class="mdl-textfield__input" type="text" rows="5" id="note" name="note"></textarea>
+                                <label class="mdl-textfield__label" for="note">Enter note</label>
+                            </div>
+                            <p>
+                                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="submit">
+                                    Submit
+                                </button>
+                            </p>
+                        </form>
+                    </div>
+                </div>				
             </div>
             <footer class="mdl-mini-footer">
                 <div class="mdl-mini-footer__left-section">

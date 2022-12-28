@@ -1,4 +1,4 @@
-//import { initializeApp } from "firebase/app";
+import { initializeApp } from "firebase/app";
 //import {storage} from "./firebase"
 //import { getStorage, ref, uploadBytes } from "firebase/storage";
 //import { ref, uploadBytes } from "firebase/storage";

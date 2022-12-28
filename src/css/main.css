@@ -366,3 +366,14 @@ font-family: 'GothamRoundedBook';
 .mdl-card__supporting-text {
 font-family: 'GothamRoundedLight';
 }
+
+.textnote{
+    position: relative;
+    font-size: 16px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 600px;
+    max-width: 100%;
+    margin: 0;
+    padding: 20px 0;
+}
