@@ -145,6 +145,11 @@ img.article-image {
   height: auto;
 }
 
+img.icon-image {
+  width: 10%;
+  height: auto;
+  border: 10px solid white;
+}
 .portfolio-max-width {
   max-width: 900px;
   margin: auto;
@@ -216,3 +221,7 @@ footer {
     overflow: visible;
 }
 
+
+.mdl-card__media {
+    background-color: rgb(255,255,255);
+}
