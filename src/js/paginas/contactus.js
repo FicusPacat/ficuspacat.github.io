@@ -1,22 +1,21 @@
-import { clientes } from '../servicos/service.js'
+import { emails } from '../servicos/service.js'
 
-const formcont = document.querySelector("#contact-us");
+const formcont = document.querySelector("#contactus");
 
 formcont.addEventListener('submit', (event) => {
-	
     event.preventDefault();
-    let novoCliente = {
-        name: form.name.value,
-        email: form.email.value,
-        note: form.note.value,		
+    let novoemail = {
+        name: formcont.name.value,
+        email: formcont.email.value,
+        note: formcont.note.value,		
     }
-    console.log(novoCliente)
-    clientes.add(novoCliente).then((docRef) => {
-        form.reset();
-        alert(`Solicitação de contato enviada com sucesso!`)
+    console.log(novoemail)
+    emails.add(novoemail).then((docRef) => { 
+        formcont.reset();
+        alert(`The contact request was sent successfully!`)
     })
         .catch((error) => {
-            alert(`Solicitação de contato não pode ser enviada`)
+            alert(`A contact request could not be sent!`)
             console.error("Error adding document: ", error);
         });
 })

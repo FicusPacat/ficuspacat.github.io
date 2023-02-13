@@ -34,6 +34,10 @@
 	<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-storage.js"></script>
+	<!--<script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js" type="module"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js" type="module"></script>
+	<script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js" type="module"></script>-->
 	<script src="./src/js/config.js"></script>
 </head>
 
@@ -379,7 +383,7 @@
 					</div>
 				</div>
 			</div>
-                <div class="mdl-cell mdl-cell--12-col  mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp" id="contactus" data-aos="fade-up">
+                <div class="mdl-cell mdl-cell--12-col  mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp" data-aos="fade-up">
                     <div class="mdl-card__title">
                         <h2 class="mdl-card__title-text">Contact</h2>
                     </div>
@@ -390,7 +394,7 @@
                         <p class="highlight">
                             <span> How can we help you?</span>
                         </p>
-                        <form class="contactus" id="contactus">
+                        <form class="contactus" id="contactus" role="form">
                             <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                                 <input class="mdl-textfield__input" pattern="[A-Z,a-z, ]*" type="text" id="Name" name="name">
                                 <label class="mdl-textfield__label" for="Name">Name...</label>
@@ -425,16 +429,16 @@
                 </div>
             </footer>
         </main>
-    </div>
+    </div>	
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="./src/js/jquery.min.js"></script>
     <script src="./src/js/bootstrap.min.js"></script>
     <script src="./src/js/main.js"></script>
 	<script src="./src/js/paginas/cadastro.js" type="module"></script>
+	<script src="./src/js/paginas/contactus.js" type="module"></script>
     <script src="./src/js/jsapi.js"></script>
     <script src="./src/js/com.js"></script>
-    <script src="./src/js/paginas/cadastro.js" type="module"></script>
 	<script src="https://kit.fontawesome.com/36ad348d10.js" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>

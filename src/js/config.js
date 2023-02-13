@@ -1,7 +1,10 @@
-import { initializeApp } from "firebase/app";
+//import { initializeApp } from "firebase/app";
 //import {storage} from "./firebase"
-//import { getStorage, ref, uploadBytes } from "firebase/storage";
+//import { getFirestore } from "firebase/firestore";
 //import { ref, uploadBytes } from "firebase/storage";
+//import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js'   
+//import { getAnalytics } from 'https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js'
+
 const firebaseConfig = {
     apiKey: "AIzaSyDTtoyiEei2zmT4WFWjAMDTbOAxKL8rtUM",
     authDomain: "ficussystem.firebaseapp.com",
@@ -11,8 +14,7 @@ const firebaseConfig = {
     appId: "1:149937490585:web:36d86aef0bdcbc5bbfc608",
     measurementId: "G-X8YFFEE7Z9"
   };
+//initializeApp(firebaseConfig);
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
-//const storage = getStorage();
-//const storageRef = ref(storage, 'pitally');
