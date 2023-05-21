@@ -6,10 +6,10 @@ const storage = firebase.storage();
 
 
 //const storageRef = storage.ref('pitally');
-const form = document.querySelector("#contact-form");
-document.getElementById("file1").onchange = function () {
-		document.getElementById("uploadFile").value = this.files[0].name;
-		var file01 = event.target.files[0];
+const form2 = document.querySelector("#contact-form2");
+document.getElementById("filerbp").onchange = function () {
+		document.getElementById("uploadFilerbp").value = this.files[0].name;
+		var filer01rbp = event.target.files[0];
 		//console.log(file01);
 	//const storageRef = ref(storage,'pitally/' + file.name);
 	//uploadBytes(storageRef, file).then((snapshot) => {
@@ -18,10 +18,10 @@ document.getElementById("file1").onchange = function () {
 	};
 
 
-document.getElementById("file2").onchange = function () {
-	document.getElementById("uploadFile2").value = this.files[0].name;
+document.getElementById("file3d").onchange = function () {
+	document.getElementById("uploadFile3d").value = this.files[0].name;
 	//console.log(this.files[0].name);
-	var file02 = event.target.files[0];
+	var file023d = event.target.files[0];
 	//const storageRef = firebase.storage().ref('pitally/' + file.name);
 	//const storageRef = ref(storage,'pitally/' + file.name);
 	//uploadBytes(storageRef, file).then((snapshot) => {
@@ -30,39 +30,34 @@ document.getElementById("file2").onchange = function () {
 	
 };
 
-form.addEventListener('submit', (event) => {
+form2.addEventListener('submit', (event) => {
 	event.preventDefault();
-	const file11 = document.querySelector("#file1").files[0];
+	const file11rbp = document.querySelector("#filerbp").files[0];
 	console.log(file11);
-	const file22 = document.querySelector("#file2").files[0];
+	const file223d = document.querySelector("#file3d").files[0];
 	console.log(file22);
-	if (document.getElementById("judge1").checked==true){
-		var judge1 = form.judge[0].value;
+	if (document.getElementById("judgelevel2").checked==true){
+		var judgelevel2 = form2.judge[0].value;
 	} else{
-		var judge1 = '';
+		var judgelevel2 = '';
 	}
-	if (document.getElementById("judge2").checked==true){
-		var judge2 = form.judge[1].value;
+	if (document.getElementById("judgefemrbp").checked==true){
+		var judgefemrbp = form2.judge[1].value;
 	} else{
-		var judge2 = '';
+		var judgefemrbp = '';
 	}
-	if (document.getElementById("judge3").checked==true){
-		var judge3 = form.judge[2].value;
+	if (document.getElementById("judgefemrbp").checked==true){
+		var judgefem3d = form2.judge[2].value;
 	} else{
-		var judge3 = '';
+		var judgefem3d = '';
 	}
-	if (document.getElementById("judge4").checked==true){
-		var judge4 = form.judge[3].value;
-	} else{
-		var judge4 = '';
-	}
+
     let novoCliente = {
-		judge1 : judge1,
-		judge2 : judge2,
-		judge3 : judge3,
-		judge4 : judge4,
-		file1: form.uploadFile.value,
-		file2: form.uploadFile2.value,
+		judgelevel2 : judgelevel2,
+		judgefemrbp : judgefemrbp,
+		judgefem3d : judgefem3d,
+		file1: form.uploadFilerpb.value,
+		file2: form.uploadFile3d.value,
 		//file1: file1,
 		//file2: file2,
         diameter: form.diameter.value,
@@ -76,7 +71,7 @@ form.addEventListener('submit', (event) => {
     console.log(novoCliente)
     clientes.add(novoCliente).then((docRef) => {
         form.reset();
-        alert(`The quote request was sent successfully!`)
+        alert(`Analysis request successfully sent. An email with a preview report and a quote will be send to the given email.`)
     })
         .catch((error) => {
             alert(`The request could not be sent!`)
@@ -84,12 +79,12 @@ form.addEventListener('submit', (event) => {
         });
 	const str1 = 'pitally/';
 	const uploadRef = storage.ref(form.uploadFile.value);
-	uploadRef.put(file11).then((snapshot) => {
-		console.log('Uploaded the file 1!');
+	uploadRef.put(file11rbp).then((snapshot) => {
+		console.log('Uploaded the file rbp!');
 	});
 	const uploadRef2 = storage.ref(form.uploadFile2.value);
-	uploadRef2.put(file22).then((snapshot) => {
-		console.log('Uploaded the file 2!');
+	uploadRef2.put(file223d).then((snapshot) => {
+		console.log('Uploaded the file 3d!');
 	});
 	//uploadBytes(uploadRef, file).then((snapshot) => {
 //		console.log('Uploaded a blob or file!');

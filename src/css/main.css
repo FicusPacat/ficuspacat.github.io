@@ -11,6 +11,8 @@ div#drop-zone:hover {
 }
 #file1 { display: none }
 #file2 { display: none }
+#filerbp { display: none }
+#file3d { display: none }
 
 .mdl-button--file {
   input {
@@ -248,6 +250,10 @@ visibility: hidden;
   margin-left: 8.33%;
 }
 
+#textf2{
+  margin-left: 2.33%;
+}
+
 .scrolling{
   overflow: scroll;
   height: 100px;
@@ -376,4 +382,22 @@ font-family: 'GothamRoundedLight';
     max-width: 100%;
     margin: 0;
     padding: 20px 0;
+}
+
+.nameemailsubmit {
+	width: 800px;
+	margin-left: 2.33%;
+	margin-right: 2.33%;
+}
+
+p {
+	margin: 10px 0 16px;
+}
+input::placeholder {
+    opacity: 0.5;
+}
+
+button:disabled,
+button[disabled]{
+	opacity: 0.5;
 }
